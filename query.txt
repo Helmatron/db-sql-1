@@ -1,0 +1,37 @@
+# db-sql-1
+ 
+use db_university;
+
+select s.*
+from students s 
+where s.date_of_birth > '1990-01-01'
+and s.date_of_birth < '1990-12-31';
+
+select c.*
+from courses c 
+where c.cfu > '10';
+
+select s.*
+from students s 
+where s.date_of_birth >= '1994-01-01';
+
+select c.*
+from courses c 
+where c.period = 'I semestre'
+and c.`year` = '1';
+
+select e.*
+from exams e 
+where e.hour >= '14:00:00'
+and e.date = '2020-06-20';
+
+select d.*
+from degrees d 
+where d.level = 'magistrale' ;
+
+select d.*
+from departments d ;
+
+select t.*
+from teachers t 
+where isnull(t.phone);
